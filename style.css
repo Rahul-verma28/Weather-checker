@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.card{
+    width: 300px;
+    /* line-height: 2rem; */
+    height: auto;
+    padding: 20px 10px;
+    border-radius: 15px;
+    margin: 20px auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12), 0 5px 12px rgba(0, 0, 0, 0.24);
+}
+
+input{
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    font-weight: bold;
+    font-size:small;
+}
+
+button{
+    padding: 5px 50px;
+    border: none;
+    border-radius: 5px;
+    background-color:deepskyblue;
+    margin: 10px 0;
+}
+
+.row{
+    display: grid;
+    gap: 10px;
+    row-gap: 15px;
+    grid-template-columns: auto auto;
+    text-align: left;
+    padding: 30px;
+}
+
+p{
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.704);
+    font-weight: bold;
+}
+
+h2, h5{
+    font-weight: bold;
+    margin: 5px;
+}
+
+span{
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+} 
+
+i{
+    font-size: 1.1rem;
+}
+
+.fa-brands{
+    font-size: 2rem;
+}

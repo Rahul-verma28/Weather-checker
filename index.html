@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>☁️ Weather - It's your day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body class="bg-info">
+    <video autoplay muted loop id="myVideo">
+        <source src="waether_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="card">
+        <h2><i class="fa-brands fa-cloudflare"></i> Weather</h2>
+        <input id="input" type="text" placeholder="Enter city name..">
+        <div>
+            <button onclick="Search()" type="button">Search</button>
+        </div>
+        <hr>
+        <div class="card-body">
+            <div id="weatherImg">
+                <!-- <i class="big-weather fa-solid fa-cloud-sun"></i> -->
+                <!-- <i class=" big-weather fa-solid fa-cloud-rain"></i> -->
+            </div>
+            <h5><i class="fa-solid fa-location-dot"></i> Weather for <span id="cityName">Delhi</span></h5>
+            <h2><span id="temperature">Loading...</span>&#8451</h2>
+            <p> Sunny weather</p>
+            <div class="row">
+                <p class="col"><i class="fa-solid fa-droplet"></i> Humidity: <span id="humidity">Loading...</span>%
+                </p>
+                <p class="col"><i class="fa-solid fa-cloud"></i> Cloud: <span id="cloud_pct">Loading...</span>%</p>
+                <p class="col"><i class="fa-solid fa-temperature-low"></i> Feels Like: <br> <span
+                        id="feels_like">Loading...</span>&#8451;</p>
+                <p class="col"><i class="fa-solid fa-wind"></i> Wind Speed: <br> <span id="windSpeed">Loading...</span>km/h
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
